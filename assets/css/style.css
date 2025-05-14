@@ -1,0 +1,408 @@
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.dashboard-new {
+    position: relative;
+    height: 768px;
+    background-color: #f1f2f2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-new .nav-header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--x-hifi-branding-colorsapple-green);
+    position: absolute;
+    padding: 29px 25px;
+}
+
+.nav-header .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-new .acc {
+    width: 127px;
+    height: 23px;
+}
+
+.dashboard-new .frame {
+    display: flex;
+    width: 127px;
+    height: 23px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+}
+
+.dash-title {
+    display: flex;
+    gap: 16px;
+
+}
+
+.dash-copy {
+    left: 40px;
+}
+
+.dashboard-new .user-user {
+    position: relative;
+    width: 18.5px;
+    height: 23.36px;
+    margin-top: -0.18px;
+    margin-bottom: -0.18px;
+}
+
+.dashboard-new .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.dashboard-new .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Manrope", Helvetica;
+    font-weight: 500;
+    color: var(--x-hifi-branding-colorsdark);
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-new .frame-2 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.dashboard-new .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Manrope", Helvetica;
+    font-weight: 600;
+    color: var(--x-hifi-branding-colorsdark);
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-new .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Font Awesome 6 Free-Solid", Helvetica;
+    font-weight: 400;
+    color: var(--x-hifi-branding-colorsdark);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 8px;
+    top: -5px;
+}
+
+.dashboard-new .layer {
+    width: 114px;
+    height: 22px;
+    top: 29px;
+    left: 25px;
+}
+
+.dashboard-new .vector {
+    width: 22px;
+    height: 21px;
+    top: 1px;
+    left: 0;
+}
+
+.dashboard-new .group {
+    width: 86px;
+    height: 22px;
+    top: 0;
+    left: 28px;
+}
+
+.dashboard-new .footer {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    max-width: 1440px;
+    margin: auto auto;
+}
+
+.dashboard-new .p {
+    height: 7px;
+    top: 0;
+    left: 0;
+    font-family: var(--info-default-font-family);
+    font-weight: var(--info-default-font-weight);
+    color: var(--x-hifi-system-accentgray-text);
+    font-size: var(--info-default-font-size);
+    text-align: right;
+    letter-spacing: var(--info-default-letter-spacing);
+    line-height: var(--info-default-line-height);
+    white-space: nowrap;
+    font-style: var(--info-default-font-style);
+}
+
+.dashboard-new .privacy-policy-terms {
+    top: 725px;
+    left: 25px;
+    font-family: "Manrope", Helvetica;
+    font-weight: 600;
+    color: var(--x-hifi-system-accentgray-text);
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-new .span {
+    text-decoration: underline;
+}
+
+.dashboard-new .text-wrapper-4 {
+    font-family: "Manrope", Helvetica;
+    font-weight: 600;
+    color: #4b5058;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
+.dashboard-new .frame-3 {
+    display: flex;
+    flex-direction: column;
+    width: 922px;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 140px auto;
+
+}
+
+.dashboard-new .frame-4 {
+    display: flex;
+    flex-direction: column;
+    width: 407px;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.dashboard-new .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Roca", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 38px;
+    letter-spacing: -1.14px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-new .text-wrapper-6 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Manrope", Helvetica;
+    font-weight: 500;
+    color: #4b5058;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: 0.4s ease-in-out;
+}
+
+.dashboard-new .frame-5 {
+    display: flex;
+    flex-direction: column;
+    height: 412px;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.dashboard-new .menu-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 32px;
+    padding: 32px 42px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.dashboard-new .frame-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.dashboard-new .img {
+    position: relative;
+    width: 23.62px;
+    height: 25.8px;
+    margin-top: -0.90px;
+    margin-left: -0.90px;
+}
+
+.dashboard-new .frame-7 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.dashboard-new .frame-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.dashboard-new .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Roca", Helvetica;
+    font-weight: 400;
+    color: #e2e774;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: -1.14px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-new .text-wrapper-8 {
+    position: relative;
+    align-self: stretch;
+    font-family: "Manrope", Helvetica;
+    font-weight: 500;
+    color: #e2e774;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-new .ARROW {
+    position: relative;
+    width: 36.36px;
+    height: 28.28px;
+    margin-right: -1.41px;
+    top: -25px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.dashboard-new .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 32px;
+    padding: 32px 42px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.dash-box, .dash-title svg path {
+    transition: 0.4s ease-in-out;
+}
+
+.dash-box:hover {
+    background-color:#1e1e1e ;
+}
+
+.dash-box:hover .text-wrapper-9, .dash-box:hover .text-wrapper-6{
+    color: #e2e774;
+}
+
+.dash-box:hover .ARROW {
+    opacity: 1;
+}
+
+.dash-box:hover .dash-title svg path {
+    stroke: #e2e774;
+}
+
+.dashboard-new .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.dashboard-new .vector-2 {
+    position: relative;
+    width: 23.8px;
+    height: 27.8px;
+    margin-top: -0.90px;
+    margin-left: -0.90px;
+}
+
+.dashboard-new .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Roca", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: -1.14px;
+    line-height: normal;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard-new .ARROW-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -4651.97px;
+    margin-right: -11731.03px;
+}
+
+footer a {
+    color: #4b5058;
+}
