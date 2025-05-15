@@ -1,3 +1,206 @@
+:root {
+    --header-height: 64px;
+    --nav-height: 64px;
+    --presentation-header-height: 70px;
+    --presentation-pagination-height: 80px;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #F1F2F2 !important;
+    scroll-behavior: auto !important;
+    font-family: "Inter Tight", sans-serif;
+}
+
+p {
+    font-family: "Inter Tight", sans-serif;
+}
+
+body.presentation-mode {
+    scroll-behavior: auto !important;
+}
+
+.header,
+.presentation-header {
+    height: var(--header-height);
+    background-color: #E2E774;;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentation-header {
+    display: none;
+}
+
+.presentation-header.show {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--presentation-header-height);
+    z-index: 1000;
+}
+
+body.presentation-mode .slide:first-of-type {
+    margin-top: calc(var(--presentation-header-height) + 30px);
+}
+
+
+.nav-header {
+    height: var(--nav-height);
+   /*  background-color: #f8f9fa; */
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides-container {
+    max-width: 1320px;
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    background-color: #fff;
+    display: none;
+    padding: 57px;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 12px;
+    position: relative;
+}
+
+.slide.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-cover {
+    background-color: #222;
+    padding-top: 30px;
+}
+
+.slide-subtitle {
+    color: #F8F8F8;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.cover-at-logo {
+    max-width: 100px;
+}
+
+.cover-title {
+    color: #fff;
+    margin-top: auto;
+}
+
+.cover-name {
+    font-size: 94px;
+}
+
+.cover-name strong {
+    font-family: "Inter Tight", sans-serif;
+}
+
+.cover-name em {
+    font-family: "Ivy mode", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.slide-content-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.slide .slide-footer img {
+    filter: brightness(0.1);
+}
+
+.slide-cover .slide-footer img {
+    filter: brightness(1) !important;
+}
+
+@media (min-width: 768px) {
+    .slide.active {
+        height: calc(100vh - var(--header-height) - var(--nav-height) - 2rem);
+        overflow-y: auto;
+    }
+
+    body.presentation-mode .slide {
+        height: calc(105vh - var(--presentation-header-height) - var(--presentation-pagination-height) - 3rem);
+        margin-bottom: 3rem;
+        display: inline-flex !important;
+        flex-direction: column;
+        overflow-y: auto;
+        scroll-margin-top: var(--presentation-header-height);
+    }
+}
+
+.slide-footer {
+    border-top: 1px solid #2222225e;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 1rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-footer span {
+    opacity: 0.5;
+    color: #222;
+}
+
+.slide-cover .slide-footer span, .slide-cover .slide-footer a{
+    color: #fff !important;
+}
+
+.slide-cover .slide-footer {
+    border-top: 1px solid #ffffff55;
+}
+
+.slide-footer a {
+    color: #222;
+    text-decoration: underline;
+}
+
+.presentation-pagination {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f8f9fa;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    display: none;
+    align-items: center;
+    z-index: 1000;
+    height: var(--presentation-pagination-height);
+}
+
+.presentation-pagination.show {
+    display: flex;
+}
+
+/* Orig CSS */
 .container {
     max-width: 1440px;
     margin: auto;
@@ -341,15 +544,18 @@
     background-color: #ffffff;
     border-radius: 10px;
 }
-.dash-box, .dash-title svg path {
+
+.dash-box,
+.dash-title svg path {
     transition: 0.4s ease-in-out;
 }
 
 .dash-box:hover {
-    background-color:#1e1e1e ;
+    background-color: #1e1e1e;
 }
 
-.dash-box:hover .text-wrapper-9, .dash-box:hover .text-wrapper-6{
+.dash-box:hover .text-wrapper-9,
+.dash-box:hover .text-wrapper-6 {
     color: #e2e774;
 }
 
