@@ -64,6 +64,7 @@
     }
 
     .slide {
+      background-color: #fff;
       display: none;
       padding: 2rem;
       border: 1px solid #e0e0e0;
@@ -128,7 +129,28 @@
 <body>
   <div class="header" id="mainHeader">
     <div>Fisher</div>
-    <div>My Account: Shaun Ryan</div>
+   <!-- Account Dropdown -->
+<div class="dropdown d-flex align-items-center">
+  <button class="btn bg-transparent border-0 dropdown-toggle d-flex flex-column align-items-start" type="button" id="accountMenu" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="d-flex align-items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="7" r="4" />
+        <path d="M5.5 21a7.5 7.5 0 0 1 13 0" />
+      </svg>
+      <div class="text-start lh-sm">
+        <small class="text-muted">My Account</small><br/>
+        <strong>Shaun Ryan</strong>
+      </div>
+    </div>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountMenu">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+  </ul>
+</div>
+
   </div>
 
   <div class="presentation-header px-4" id="presentationHeader">
@@ -172,6 +194,14 @@
     </div>
     <div class="slide" id="slide-2">
       <h2>About Us</h2>
+      <p>This acts as a North Star, providing a consistent brand narrative...</p>
+      <div class="slide-footer">
+        <strong>About Today.</strong>
+        <span>Visit <a href="https://www.abouttoday.com.au" target="_blank">abouttoday.com.au</a></span>
+      </div>
+    </div>
+    <div class="slide" id="slide-3">
+      <h2>Contact</h2>
       <p>This acts as a North Star, providing a consistent brand narrative...</p>
       <div class="slide-footer">
         <strong>About Today.</strong>
