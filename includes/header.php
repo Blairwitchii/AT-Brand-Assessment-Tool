@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/styleguide.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/udh6dzo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aul1nkc.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

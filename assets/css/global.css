@@ -8,12 +8,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 html {
     width: 100%;
-    
+
 }
 
 
@@ -27,11 +27,73 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Roca", Helvetica;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: IvyMode;
+}
+
+em {
+    font-style: italic;
 }
 
 @font-face {
     font-family: "Font Awesome 6 Free-Solid";
     src: url("https://anima-uploads.s3.amazonaws.com/projects/6339b9b6cff130481da234b3/fonts/font-awesome-6-free-regular-400.otf") format("opentype");
+}
+
+
+
+/* Backgrounds */
+.dark-bg {
+    background-color: #222222;
+}
+
+/* Padding */
+.p-60 {
+    padding: 60px;
+}
+
+.p-80 {
+    padding: 80px;
+}
+
+/* Structure */
+.black-side {
+    width: 100%;
+    max-width: 33.26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.r_content-box {
+    width: 100%;
+    max-width: 66.75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bottom {
+    color: #F8F8F8;
+}
+
+.side-bottom-percent {
+
+    font-family: IvyMode;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31px;
+    position: relative;
+}
+
+.pecentage-wrap {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+    font-weight: 300;
 }

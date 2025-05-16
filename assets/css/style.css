@@ -15,6 +15,7 @@ body {
     background: #F1F2F2 !important;
     scroll-behavior: auto !important;
     font-family: "Inter Tight", sans-serif;
+    color: #222;
 }
 
 p {
@@ -28,7 +29,8 @@ body.presentation-mode {
 .header,
 .presentation-header {
     height: var(--header-height);
-    background-color: #E2E774;;
+    background-color: #E2E774;
+    ;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -56,7 +58,7 @@ body.presentation-mode .slide:first-of-type {
 
 .nav-header {
     height: var(--nav-height);
-   /*  background-color: #f8f9fa; */
+    /*  background-color: #f8f9fa; */
     padding: 0.75rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -114,12 +116,14 @@ body.presentation-mode .slide:first-of-type {
 
 .cover-name strong {
     font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
 }
 
 .cover-name em {
-    font-family: "Ivy mode", sans-serif;
+    font-weight: 200;
+    font-family: ivymode, sans-serif;
+    font-weight: 200;
     font-style: italic;
-    font-weight: 300;
 }
 
 .slide-content-wrap {
@@ -135,6 +139,81 @@ body.presentation-mode .slide:first-of-type {
 
 .slide-cover .slide-footer img {
     filter: brightness(1) !important;
+}
+
+.slide-title {
+    font-size: 26px !important;
+    font-weight: 300 !important;
+}
+
+/* Overview Slide */
+.overview-content,
+.contain-slide {
+    max-width: 994px;
+    margin: auto;
+    width: 100%;
+}
+
+.overview-content p {
+    font-family: IvyMode;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.h3-slide-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.h4-slide-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.doc-overview-box {
+    border-bottom: solid 0.5px #00000021;
+    width: 100%;
+}
+
+.doc-overview-box:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.doc-overview-box p {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.copy-12 p {
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.tiny-title {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 2.4px;
+    margin-bottom: 24px;
+}
+
+.with-side-content p {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.ivy-32 {
+    font-family: IvyMode !important;
+    font-size: 32px !important;
+    font-weight: 300 !important;
 }
 
 @media (min-width: 768px) {
@@ -169,7 +248,8 @@ body.presentation-mode .slide:first-of-type {
     color: #222;
 }
 
-.slide-cover .slide-footer span, .slide-cover .slide-footer a{
+.slide-cover .slide-footer span,
+.slide-cover .slide-footer a {
     color: #fff !important;
 }
 
@@ -199,6 +279,28 @@ body.presentation-mode .slide:first-of-type {
 .presentation-pagination.show {
     display: flex;
 }
+
+.with-side {
+    flex-direction: row !important;
+}
+
+.side-title {
+    font-family: IvyMode;
+    font-size: 26px;
+    font-weight: 300;
+    color: #F8F8F8;
+    line-height: 31px;
+}
+
+.with-border-bottom {
+    border-bottom: solid 0.5px #00000021;
+    padding-bottom: 32px;
+}
+
+.with-border-bottom:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 
 /* Orig CSS */
 .container {
