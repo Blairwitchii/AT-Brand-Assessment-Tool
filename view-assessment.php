@@ -18,7 +18,7 @@
 </div>
 
 <div class="nav-header" id="navHeader">
-  <a href="#" class="text-decoration-none editdetails"><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <a href="edit-client-details.php" class="text-decoration-none editdetails"><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5 9.5L1 5.5L5 1.5" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg> Edit client details</a>
   <div class="d-flex align-items-center">
@@ -261,7 +261,7 @@
             <h3 class="h4-slide-title">The Jester</h3>
             <p>Jester brands are playful, humorous, and irreverent. They entertain and delight, injecting joy and levity into everyday life while encouraging spontaneity and fun.</p>
           </div>
-          <div class="doc-overview-box">
+          <div class="doc-overview-box copy-12">
             <h3 class="h4-slide-title">The Everyman</h3>
             <p>Everyman brands are relatable, down-to-earth, and inclusive. They resonate with ordinary people and emphasise the value of community, belonging, and authenticity.</p>
           </div>
@@ -505,7 +505,7 @@
 
   </div>
 
-  <div class="slide dark-bg text-light" id="slide-18">
+  <div class="slide dark-bg text-light" id="slide-18" style="padding-bottom:57px;">
     <div class="row three-col-grid h-100">
       <div class="three-col-grid col-md-4 text-center d-flex flex-column">
         <div class="side-title d-block">
@@ -1133,7 +1133,7 @@
   <div class="slide competition" id="slide-32">
     <div class="slide-content-wrap">
       <h2 class="slide-title">The Competition — <em>Gaps in the Defense</em></h2>
-      <div class="row gx-5 gaps-defense" style="margin-top: 60px;">
+      <div class="row gx-5 gaps-defense" style="margin-top: 40px;">
         <div class="col-md-4">
           <div class="doc-overview-box">
             <div class="compt-data-wrap">
@@ -1979,24 +1979,6 @@ height: 479px;">
         <path d="M10 14L16.5 7.5M16.5 7.5L10 1M16.5 7.5H0.9" stroke="#1E1E1E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
       </svg></button>
       <span id="paginationTextBottom">Page 1 of 3</span>
-</div>
-
-<!-- Share Modal -->
-<div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content border-0 rounded-3 shadow">
-      <div class="modal-body bg-light p-4 d-flex flex-column gap-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="fw-semibold text-success">✔️ Link created</div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="input-group">
-          <input type="text" id="shareLinkInput" class="form-control rounded-pill px-3" value="https://yourdomain.com/share-link" readonly>
-          <button class="btn btn-dark rounded-pill ms-2 px-4" onclick="copyShareLink()">Copy link</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <?php include "includes/footer.php" ?>

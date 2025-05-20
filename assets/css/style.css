@@ -335,7 +335,7 @@ body.presentation-mode .slide:first-of-type {
     .slide.active {
         min-height: calc(100vh - var(--header-height) - var(--nav-height) - 2rem);
         overflow: hidden;
-        height: 90vh;
+        height: 100vh;
 
     }
 
@@ -346,7 +346,7 @@ body.presentation-mode .slide:first-of-type {
         flex-direction: column;
         overflow: hidden;
         scroll-margin-top: var(--presentation-header-height);
-        height: 90vh;
+        height: 100vh;
     }
 }
 
@@ -891,6 +891,83 @@ body.presentation-mode .slide:first-of-type {
     margin-bottom: 40px;
 }
 
+/* Client Item */
+.client-item:hover .btn {
+    color: #E2E774;
+}
+
+.client-item .btn:focus {
+    border: 0;
+    outline: none;
+}
+
+.client-item .dropdown-item {
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    height: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.client-item .dropdown-item:hover {
+    background-color: #E2E774;
+}
+
+.client-item .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+/* Modal */
+input#shareLinkInput {
+    border: 0;
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.linkcreated {
+    font-family: Roca;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    color: #1E1E1E;
+}
+
+.linkcopy-wrap {
+    border-radius: 30px;
+    border: 1px solid var(--hifi-system-accent-darker-lavander, #827DEB);
+    background: var(--Text-Field, #F9F9F9);
+    padding: 3px;
+}
+
+.at-modal {
+    border-radius: 8px !important;
+    background: #F8F8F1;
+    overflow: hidden;
+    position: relative;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: #000;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Orig CSS */
 .container {
     max-width: 1440px;
@@ -933,6 +1010,22 @@ body.presentation-mode .slide:first-of-type {
 .nav-header .nav {
     display: flex;
     justify-content: space-between;
+}
+
+.account-label {
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.u-name {
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 a.frame-wrapper.dash-box {

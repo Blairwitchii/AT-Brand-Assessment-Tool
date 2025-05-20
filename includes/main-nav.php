@@ -12,8 +12,8 @@
                     <path d="M9.49972 11.2856C12.1822 11.2856 14.3569 9.11096 14.3569 6.42843C14.3569 3.74591 12.1822 1.57129 9.49972 1.57129C6.81719 1.57129 4.64258 3.74591 4.64258 6.42843C4.64258 9.11096 6.81719 11.2856 9.49972 11.2856Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <div class="text-start lh-sm">
-                    <small class="text-muted">My Account</small><br />
-                    <strong>Shaun Ryan</strong>
+                    <small class="text-muted account-label">My Account</small><br />
+                    <strong class="u-name">Shaun Ryan</strong>
                 </div>
             </div>
         </button>
