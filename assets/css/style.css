@@ -22,6 +22,88 @@ p {
     font-family: "Inter Tight", sans-serif;
 }
 
+span#paginationText {
+    font-family: Manrope;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+button#presentationToggle {
+    border: 0;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-family: Manrope;
+}
+
+button.btn.btn-link.text-dark.presentbtns {
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 5px;
+    font-weight: 600;
+}
+
+span#paginationTextBottom {
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+.presentation-pagination .btn {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    background: transparent;
+}
+
+.sharelink {
+    border-radius: 6px;
+    background: #1E1E1E;
+    color: #fff;
+    height: 35px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+a.text-decoration-none.editdetails {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e1e1e;
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.layer {
+    max-width: 114px;
+    display: flex;
+    gap: 10px;
+}
+
+.vr {
+    max-height: 20px;
+    margin-top: 10px;
+}
+
+img.group {
+    max-height: 22px;
+}
+
 body.presentation-mode {
     scroll-behavior: auto !important;
 }
@@ -83,6 +165,7 @@ body.presentation-mode .slide:first-of-type {
     /* border: 1px solid #e0e0e0; */
     border-radius: 12px;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .slide.active {
@@ -178,8 +261,13 @@ body.presentation-mode .slide:first-of-type {
     width: 100%;
 }
 
+
 .doc-overview-box:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.with-stars .doc-overview-box {
+    margin-bottom: 32px;
 }
 
 .doc-overview-box p {
@@ -190,7 +278,17 @@ body.presentation-mode .slide:first-of-type {
 }
 
 .copy-12 p {
-    font-size: 12px;
+    font-size: 12px !important;
+    padding-right: 20px;
+}
+
+.copy-16 p {
+    font-size: 14px !important;
+    padding-right: 20px;
+}
+
+.copy-16 p {
+    font-size: 16px !important;
     padding-right: 20px;
 }
 
@@ -216,10 +314,11 @@ body.presentation-mode .slide:first-of-type {
     font-weight: 300 !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1551px) {
     .slide.active {
         height: calc(100vh - var(--header-height) - var(--nav-height) - 2rem);
-        overflow-y: auto;
+        overflow: hidden;
+
     }
 
     body.presentation-mode .slide {
@@ -227,8 +326,27 @@ body.presentation-mode .slide:first-of-type {
         margin-bottom: 3rem;
         display: inline-flex !important;
         flex-direction: column;
-        overflow-y: auto;
+        overflow: hidden;
         scroll-margin-top: var(--presentation-header-height);
+    }
+}
+
+@media (max-width: 1550px) {
+    .slide.active {
+        min-height: calc(100vh - var(--header-height) - var(--nav-height) - 2rem);
+        overflow: hidden;
+        height: 90vh;
+
+    }
+
+    body.presentation-mode .slide {
+        min-height: calc(100vh - var(--presentation-header-height) - var(--presentation-pagination-height) - 3rem);
+        margin-bottom: 3rem;
+        display: inline-flex !important;
+        flex-direction: column;
+        overflow: hidden;
+        scroll-margin-top: var(--presentation-header-height);
+        height: 90vh;
     }
 }
 
@@ -267,13 +385,13 @@ body.presentation-mode .slide:first-of-type {
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    background: #f8f9fa;
+    background: #F8F8F1;
     border-radius: 30px;
-    padding: 0.5rem 1.5rem;
+    padding: 16px 24px;
     display: none;
     align-items: center;
     z-index: 1000;
-    height: var(--presentation-pagination-height);
+    height: 64px;
 }
 
 .presentation-pagination.show {
@@ -293,14 +411,485 @@ body.presentation-mode .slide:first-of-type {
 }
 
 .with-border-bottom {
-    border-bottom: solid 0.5px #00000021;
+
     padding-bottom: 32px;
 }
 
 .with-border-bottom:not(:last-child) {
     margin-bottom: 32px;
+    border-bottom: solid 0.5px #00000021;
 }
 
+.sentiments-title {
+    color: #222;
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sentiment-wrap p {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.sentiment-wrap:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sentiments .doc-overview-box {
+    margin-bottom: 32px;
+}
+
+/* Web Example */
+.web-example p {
+    font-family: IvyMode;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Insta Post */
+.insta-post h3 {
+    padding-bottom: 25px;
+    line-height: 1;
+}
+
+.insta-post .tiny-title {
+    margin-bottom: 24px;
+}
+
+.insta-post p,
+.insta-post span {
+    font-size: 22px !important;
+}
+
+.insta-post strong,
+.linkedin-post strong {
+    font-weight: 600;
+}
+
+.ins-title {
+    font-weight: 600;
+}
+
+.insta-post .hash {
+    color: #28AAE2;
+}
+
+/* Linkedin Post */
+.linkedin-post p {
+    font-size: 22px !important;
+}
+
+/* Competitions */
+.competition .sentiment-wrap p {
+    font-size: 12px;
+}
+
+.competition .sentiment-wrap strong {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.startable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 0.5px solid rgba(34, 34, 34, 0.10);
+}
+
+.startable th,
+.startable td {
+    padding: 5px 24px;
+    text-align: left;
+    font-size: 12px;
+    border: 0.5px solid rgba(34, 34, 34, 0.10);
+}
+
+.startable th {
+    background-color: #E5E5E5;
+    font-weight: 600;
+    border: 0.5px solid rgba(34, 34, 34, 0.10);
+    font-family: "Inter Tight";
+}
+
+.startable tr:nth-child(even) {
+    background-color: #22222208;
+}
+
+.startable .stars {
+    color: #222222;
+    text-shadow: 0 0 1px #222222;
+}
+
+.recommendations {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.startable tfoot td {
+    background-color: #222;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Their Language */
+
+.competitor-data p {
+    margin-bottom: 0;
+}
+
+.their-language .doc-overview-box {
+    padding-bottom: 32px;
+}
+
+/* Gaps in the Defense */
+.comp-data {
+    border-collapse: collapse;
+    min-width: 100px;
+    font-size: 14px;
+}
+
+.comp-data th,
+.comp-data td {
+    border: 0;
+    font-family: helvetica-neue-lt-pro, sans-serif;
+}
+
+.comp-data th {
+    text-align: right;
+    font-weight: 700;
+}
+
+.comp-data td {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.compt-data-wrap {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.gaps-defense .doc-overview-box {
+    padding-bottom: 43px;
+    margin-bottom: 43px;
+}
+
+.gaps-defense .doc-overview-box:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.ivymode {
+    font-family: IvyMode;
+}
+
+/* Market Analysis */
+.market-analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.market-analysis-table th,
+.market-analysis-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.market-analysis-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* .market-analysis-table tr:hover {
+    background-color: #f5f5f5;
+} */
+
+.market-analysis-strategies {
+    font-weight: bold;
+}
+
+.market-analysis-relevance {
+    text-align: center;
+}
+
+.market-analysis-relevance span {
+    font-size: 1.2em;
+    color: #333;
+    /* Adjust star color as needed */
+}
+
+.market-analysis-percentage {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* "Market Analysis" themed CSS - prefixed with .market-analysis-table */
+
+.market-analysis-table {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.market-analysis-table th,
+.market-analysis-table td {
+    padding: 30px 20px;
+
+}
+
+.market-analysis-table th {
+    padding: 5px 23px;
+    font-family: "Inter Tight";
+}
+
+.market-analysis-table th {
+    background-color: #E5E5E5;
+    /* Light cyan for header */
+    color: #222;
+    /* Darker cyan for header text */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+/* .market-analysis-table tr:nth-child(even) {
+    background-color: #f2fafa;
+    
+} */
+
+
+.market-analysis-strategies {
+    font-weight: 300;
+    /* Green for strategy names */
+}
+
+.market-analysis-relevance span {
+    color: #222;
+    /* Golden yellow for stars */
+    font-size: 40px;
+}
+
+.market-analysis-percentage {
+    color: #222;
+    /* Blue for percentages */
+    font-family: IvyMode !important;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.num-title {
+    font-family: IvyMode;
+    font-size: 26px;
+    font-weight: 300;
+    color: #222;
+}
+
+.market-analysis-table td:first-child {
+    max-width: 603px;
+}
+
+
+.market-analysis-table td:not(:first-child),
+.market-analysis-table th:not(:first-child) {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.market-analysis-table tr:not(:last-child) td {
+    border-bottom: 0.5px solid #0000002b
+}
+
+.market-analysis-table td {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    font-weight: 300;
+}
+
+/* Video Content */
+.segment {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+    /*     border: 1px solid #ddd; */
+    border-radius: 5px;
+}
+
+.segment:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.segment p {
+    font-family: helvetica-neue-lt-pro, sans-serif;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.time {
+    color: #222;
+    width: 200px;
+    font-family: IvyMode !important;
+    font-size: 26px !important;
+    font-style: normal;
+    font-weight: 300 !important;
+}
+
+.label {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Adwords */
+.the-adwords p {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+/* Blacklight */
+.blacklight .overview-col h3 {
+    margin-bottom: 32px !important;
+}
+
+.overview-col {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+.blacklight div:not(:nth-child(3)) .overview-col {
+    border-right: solid 1px #2222222b;
+}
+
+.blacklight div:nth-child(2) .overview-col {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blacklight div:nth-child(1) .overview-col {
+    padding-right: 20px;
+}
+
+.blacklight div:nth-child(3) .overview-col {
+    padding-left: 20px;
+}
+
+.blacklight-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.blacklight-table th,
+.blacklight-table td {
+    border: 1px solid #ddd;
+    padding: 3px 24px;
+    text-align: left;
+    font-family: "Inter Tight";
+    font-size: 12px;
+}
+
+.blacklight-table th {
+    background-color: #E5E5E5;
+    color: #222;
+    font-family: "Inter Tight";
+    font-weight: 700;
+    padding: 3px 24px;
+    height: 38px;
+    vertical-align: middle;
+}
+
+.blacklight-table th:last-child {
+    background-color: #222;
+    color: #fff;
+}
+
+.blacklight-table tbody tr:nth-child(even) {
+    background-color: #FAFAFA;
+    ;
+}
+
+.blacklight-star-filled {
+    color: black;
+    font-size: 18px;
+}
+
+.blacklight-star-empty {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.backlight-ov div:first-child .overview-col {
+    padding-right: 50px;
+}
+
+.backlight-ov div:last-child .overview-col {
+    padding-left: 50px;
+}
+
+.contact-det {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Inter Tight";
+    line-height: 1;
+}
+
+.date {
+    font-weight: 300;
+    border-left: solid 1px;
+    padding-left: 10px;
+}
+
+/* Timelines */
+.timelines {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-family: "Inter Tight";
+    font-size: 12px;
+
+}
+
+.timelines th,
+.timelines td {
+    border: 1px solid #ddd;
+    padding: 3px 24px;
+    text-align: left;
+    font-family: "Inter Tight";
+    height: 26px;
+}
+
+.timelines th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+
+.timelines td:nth-child(1) {
+    width: 135px;
+}
+
+.note {
+    font-family: "Inter Tight";
+    font-size: 12px;
+}
+
+.timelines-box:not(:last-child) {
+    margin-bottom: 40px;
+}
 
 /* Orig CSS */
 .container {
@@ -308,12 +897,27 @@ body.presentation-mode .slide:first-of-type {
     margin: auto;
 }
 
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    right: 0;
+    position: relative;
+    left: 100%;
+    top: -10px;
+}
+
+
 .dashboard-new {
     position: relative;
     height: 768px;
     background-color: #f1f2f2;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -329,6 +933,10 @@ body.presentation-mode .slide:first-of-type {
 .nav-header .nav {
     display: flex;
     justify-content: space-between;
+}
+
+a.frame-wrapper.dash-box {
+    text-decoration: none;
 }
 
 .dashboard-new .acc {
@@ -350,6 +958,10 @@ body.presentation-mode .slide:first-of-type {
     display: flex;
     gap: 16px;
 
+}
+
+.dash-title svg {
+    margin-top: 7px;
 }
 
 .dash-copy {
@@ -446,6 +1058,10 @@ body.presentation-mode .slide:first-of-type {
     background-color: transparent;
     max-width: 1440px;
     margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .dashboard-new .p {
@@ -493,7 +1109,7 @@ body.presentation-mode .slide:first-of-type {
     width: 922px;
     align-items: flex-start;
     gap: 40px;
-    margin: 140px auto;
+    margin: 60px auto;
 
 }
 
