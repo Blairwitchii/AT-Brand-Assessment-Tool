@@ -2,7 +2,7 @@
     <a href="/" class="layer">
         <img class="vector" src="https://c.animaapp.com/ct0n38lD/img/vector.svg">
         <img class="group" src="https://c.animaapp.com/ct0n38lD/img/group@2x.png">
-</a>
+    </a>
     <!-- Account Dropdown -->
     <div class="dropdown d-flex align-items-center">
         <button class="btn bg-transparent border-0 dropdown-toggle d-flex flex-column align-items-start" type="button" id="accountMenu" data-bs-toggle="dropdown" aria-expanded="false">
@@ -13,7 +13,7 @@
                 </svg>
                 <div class="text-start lh-sm">
                     <small class="text-muted account-label">My Account</small><br />
-                    <strong class="u-name">Shaun Ryan</strong>
+                    <strong class="u-name">John Smith</strong>
                 </div>
             </div>
         </button>

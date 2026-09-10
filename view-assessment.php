@@ -3,7 +3,7 @@
 
 <div class="presentation-header px-4" id="presentationHeader">
   <div>
-    <h3 class="mb-0 companytitle">Agile Workplaces - Assessment</h3>
+    <h3 class="mb-0 companytitle">Company Name - Assessment</h3>
   </div>
   <div class="d-flex gap-3 align-items-center">
     <button class="btn btn-link text-dark presentbtns" onclick="downloadPDF()"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1961,7 +1961,7 @@ height: 479px;">
     align-items: end;
     justify-content: space-between;">
         <h2 class="cover-name" style="line-height: 1;"><em>Thanks.</em></h2>
-        <div class="contact-det"><a href="mailto:shaun@abouttoday.com.au"></a>shaun@abouttoday.com.au</a>
+        <div class="contact-det"><a href="mailto:johhsmith@company.com"></a>johhsmith@company.com</a>
           <div class="date">April 2025</div>
         </div>
       </div>

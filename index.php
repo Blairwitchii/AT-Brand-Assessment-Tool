@@ -4,7 +4,7 @@
     <div class="content-sec container">
         <div class="frame-3">
             <div class="frame-4">
-                <div class="text-wrapper-5">Welcome, Shaun!</div>
+                <div class="text-wrapper-5">Welcome, John!</div>
                 <p class="text-wrapper-6">Manage, assess, and refine brands seamlessly using AI-powered tools.</p>
             </div>
             <div class="frame-5">
