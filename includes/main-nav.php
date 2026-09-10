@@ -1,7 +1,6 @@
 <div class="header" id="mainHeader">
     <a href="/" class="layer">
-        <img class="vector" src="https://c.animaapp.com/ct0n38lD/img/vector.svg">
-        <img class="group" src="https://c.animaapp.com/ct0n38lD/img/group@2x.png">
+        <div class="logo-holder">Your Company Name</div>
     </a>
     <!-- Account Dropdown -->
     <div class="dropdown d-flex align-items-center">
