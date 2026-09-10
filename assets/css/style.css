@@ -18,6 +18,15 @@ body {
     color: #222;
 }
 
+.logo-holder {
+    font-size: 20px;
+    width: 200px;
+    min-width: 250px;
+    text-decoration: none !important;
+    font-weight: 800;
+    color: #222;
+}
+
 p {
     font-family: "Inter Tight", sans-serif;
 }
@@ -90,9 +99,11 @@ a.text-decoration-none.editdetails {
 }
 
 .layer {
-    max-width: 114px;
+    max-width: 200px;
     display: flex;
     gap: 10px;
+    text-decoration: none;
+    color: #222;
 }
 
 .vr {
